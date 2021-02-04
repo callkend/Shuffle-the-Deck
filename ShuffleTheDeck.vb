@@ -1,8 +1,8 @@
 ﻿'Kendall Callister
 'RCET0265
 'Spring 2021
-'Shuffle The Deck
-'
+'Shuffle the Deck
+'https://github.com/callkend/Shuffle-the-Deck.git
 
 Option Explicit On
 Option Strict On
