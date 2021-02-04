@@ -77,6 +77,7 @@ Module ShuffleTheDeck
             'See if the card has already been choosen
             If card = "0" Then
                 newCard = False
+
                 'Clears card from the matrix and tells it what suit it is.
             Else
                 newCard = True
