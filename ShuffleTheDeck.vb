@@ -36,18 +36,20 @@ Module ShuffleTheDeck
                         deck = Shuffle()
                         cardCount = 52
                     End If
+
                 'User shuffles the deck
                 Case = "shuffle"
                     deck = Shuffle()
                     cardCount = 52
+
                 'Ends the loop
                 Case = "q"
                     run = False
                 Case Else
                     Console.WriteLine("Invaild Input")
             End Select
-
         End While
+
     End Sub
 
     'Refills the Matrix with the Card Values
@@ -57,6 +59,7 @@ Module ShuffleTheDeck
             {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"},
             {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"}}
         Return deck
+
     End Function
 
     'Retrieves a random card value that hasn't been chosen
@@ -90,6 +93,9 @@ Module ShuffleTheDeck
                 End Select
             End If
         End While
+
         Return card
+
     End Function
+
 End Module
