@@ -27,7 +27,7 @@ Module ShuffleTheDeck
             userInput = Console.ReadLine()
             Select Case userInput
 
-                'User selects to draw crad
+                'User selects to draw card
                 Case = String.Empty
                     card = Draw(deck)
                     cardCount -= 1
@@ -46,7 +46,7 @@ Module ShuffleTheDeck
                 Case = "q"
                     run = False
                 Case Else
-                    Console.WriteLine("Invaild Input")
+                    Console.WriteLine("Invalid Input")
             End Select
         End While
 
@@ -74,7 +74,7 @@ Module ShuffleTheDeck
             cardSuit = CInt(Rnd() * 3)
             card = drawPile(cardSuit, cardValue)
 
-            'See if the card has already been choosen
+            'See if the card has already been chosen
             If card = "0" Then
                 newCard = False
 
